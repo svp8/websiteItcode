@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>svp's website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <button onclick="change(1)">1</button>
+        <button onclick="change(2)">2</button>
+        <button onclick="change(3)">3</button>
+    </header>
+    <table id="table" style="display: initial;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ФИО</th>
+                <th>Должность</th>
+                <th>Телефон</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <div style="display: none;" id="goodFella">
+        <h1>Сотрудник месяца</h1>
+        <form style="display: flex;flex-direction: column;gap: 10px;">
+            <div>
+                <h3>id:</h3>
+                <input id="id1" disabled/>
+            </div>
+            <div>
+                <h3>name:</h3>
+                <input id="name1" disabled/>
+            </div>
+            <div>
+                <h3>position:</h3>
+                <input id="position1" disabled/>
+            </div>
+            <div>
+                <h3>phone:</h3>
+                <input id="phone1" disabled/>
+            </div>
+            <div>
+                <h3>address:</h3>
+                <input id="address1"  disabled/>
+            </div>
+            <div>
+                <h3>email:</h3>
+                <input id="email1"  disabled/>
+            </div>
+
+        </form>
+    </div>
+    <div style="display: none;" id="create">
+        <h1>Создание сотрудника</h1>
+        <form style="display: flex;flex-direction: column;gap: 10px;">
+            <div>
+                <h3>id:</h3>
+                <input id="id"/>
+            </div>
+            <div>
+                <h3>name:</h3>
+                <input id="name" />
+            </div>
+            <div>
+                <h3>position:</h3>
+                <input id="position" />
+            </div>
+            <div>
+                <h3>phone:</h3>
+                <input id="phone" />
+            </div>
+            <div>
+                <h3>address:</h3>
+                <input id="address"  />
+            </div>
+            <div>
+                <h3>email:</h3>
+                <input id="email"  />
+            </div>
+        </form>
+        <button onclick="addNewWorker()">Добавить</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
